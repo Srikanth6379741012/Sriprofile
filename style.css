@@ -15,17 +15,35 @@ body {
   margin: auto;
   padding: 20px;
 }
+h2 {
+  color: #0077cc;
+  margin-bottom: 15px;
+}
+a {
+  color: #0077cc;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
 
 /* Header */
 header {
   background-color: #0077cc;
   color: white;
-  padding: 40px 20px;
-  text-align: center;
+  padding: 30px 20px;
 }
-.subtitle {
-  font-size: 1.2rem;
-  margin-top: 10px;
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 4px solid white;
+  object-fit: cover;
 }
 
 /* Navigation */
@@ -37,20 +55,20 @@ nav ul {
   justify-content: center;
   list-style: none;
   padding: 10px;
+  flex-wrap: wrap;
 }
 nav li {
   margin: 0 15px;
 }
 nav a {
   color: white;
-  text-decoration: none;
   font-weight: 500;
 }
 nav a:hover {
-  text-decoration: underline;
+  border-bottom: 2px solid #fff;
 }
 
-/* Main Content */
+/* Sections */
 section {
   background: white;
   margin-top: 20px;
@@ -58,29 +76,33 @@ section {
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
-h2 {
-  color: #0077cc;
-  margin-bottom: 15px;
-}
-ul {
-  list-style: none;
-}
-ul li {
-  margin-bottom: 10px;
-}
-
-/* Skills */
 .skill-list {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  margin-bottom: 15px;
 }
 .skill-list li {
   background-color: #e0f0ff;
-  padding: 10px 15px;
+  padding: 8px 14px;
   border-radius: 5px;
   color: #005fa3;
   font-weight: 500;
+}
+
+/* Education Table */
+.edu-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.edu-table th, .edu-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+.edu-table th {
+  background-color: #0077cc;
+  color: white;
 }
 
 /* Footer */
@@ -93,6 +115,13 @@ footer {
 
 /* Responsive */
 @media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .profile-pic {
+    margin-top: 15px;
+  }
   nav ul {
     flex-direction: column;
     align-items: center;
@@ -101,3 +130,4 @@ footer {
     flex-direction: column;
   }
 }
+
