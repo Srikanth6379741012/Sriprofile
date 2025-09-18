@@ -82,30 +82,20 @@ ul li {
   margin-bottom: 10px;
 }
 
-/* Skills with Progress Bars */
-.skill {
-  margin-bottom: 20px;
-}
-.skill p {
-  margin-bottom: 8px;
+/* Skills (Elaborated) */
+.skill-list li {
+  background-color: #e0f0ff;
+  padding: 15px;
+  border-radius: 5px;
+  color: #005fa3;
   font-weight: 500;
+  margin-bottom: 12px;
+  line-height: 1.6;
 }
-.progress {
-  background: #e0e0e0;
-  border-radius: 20px;
-  overflow: hidden;
-  height: 20px;
-}
-.progress-bar {
-  background: linear-gradient(90deg, #0077cc, #00bfff);
-  color: white;
-  height: 100%;
-  text-align: right;
-  padding-right: 10px;
-  border-radius: 20px;
-  font-size: 0.8rem;
-  font-weight: bold;
-  line-height: 20px;
+.skill-list li strong {
+  color: #003d66;
+  display: block;
+  margin-bottom: 5px;
 }
 
 /* Footer */
