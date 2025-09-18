@@ -8,71 +8,166 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+  <!-- Header -->
   <header>
-    <div class="container">
-      <h1>Srikanth S</h1>
-      <p class="subtitle">AWS | DevOps | Python | Linux</p>
+    <div class="header-content container">
+      <div>
+        <h1>Srikanth S</h1>
+        <p class="subtitle">AWS | DevOps | Python | Linux</p>
+      </div>
+      <img src="profile.jpg" alt="Profile Photo" class="profile-pic">
     </div>
   </header>
 
+  <!-- Navigation -->
   <nav>
     <ul>
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#education">Education</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#certifications">Certifications</a></li>
       <li><a href="#contact">Contact</a></li>
       <li><a href="#links">Links</a></li>
     </ul>
   </nav>
 
   <main class="container">
+    <!-- About Section -->
     <section id="about">
       <h2>👋 About Me</h2>
-      <p>Hello! I'm <strong>Srikanth S</strong>, passionate about cloud computing, automation, and scripting. I specialize in AWS, DevOps practices, Python scripting, and Linux system management. I’m currently pursuing my MCA and love building efficient and scalable systems.</p>
+      <p>
+        Hello! I'm <strong>Srikanth S</strong>, passionate about cloud computing, DevOps practices, and automation. 
+        Skilled in AWS services, containerization, CI/CD pipelines, Linux administration, and Python scripting. 
+        Currently pursuing my MCA and gaining hands-on experience as an IT Intern. 
+        I aim to build scalable, secure, and efficient cloud-based solutions.
+      </p>
     </section>
 
+    <!-- Skills Section -->
     <section id="skills">
       <h2>🧠 Skills</h2>
+      <h3>Cloud</h3>
       <ul class="skill-list">
-        <li>AWS Cloud Services</li>
-        <li>DevOps Tools (Git, Jenkins, Docker)</li>
-        <li>Linux Commands & Shell Scripting</li>
-        <li>Python (Automation & Scripting)</li>
-        <li>Version Control (Git & GitHub)</li>
+        <li>AWS EC2 (Server creation)</li>
+        <li>AWS S3 (Simple Storage Service)</li>
+        <li>AWS VPC (VPC Peering)</li>
+        <li>AWS ELB (Elastic Load Balancing)</li>
+        <li>AWS Route 53</li>
+      </ul>
+      <h3>DevOps</h3>
+      <ul class="skill-list">
+        <li>Jenkins</li>
+        <li>Docker</li>
+        <li>Kubernetes</li>
+        <li>Terraform</li>
+      </ul>
+      <h3>Operating Systems</h3>
+      <ul class="skill-list">
+        <li>Linux</li>
+        <li>Windows</li>
+      </ul>
+      <h3>Programming Languages</h3>
+      <ul class="skill-list">
+        <li>Python</li>
+        <li>Java (Basic)</li>
       </ul>
     </section>
 
+    <!-- Projects Section -->
     <section id="projects">
       <h2>🛠️ Projects</h2>
       <ul>
-        <li><strong>WSL Setup Guide:</strong> Documented Ubuntu installation on Windows with offline support.</li>
-        <li><strong>Python CLI Tool:</strong> Built a file organizer using Python and shell scripting.</li>
+        <li><strong>Food Donation Bridge:</strong> A college project that connects donors and NGOs using a web portal to distribute food efficiently.</li>
+        <li><strong>AWS Hosting Project:</strong> Deployed a static website on AWS S3 with CloudFront, Route 53, and SSL for secure delivery.</li>
+        <li><strong>DevOps CI/CD Pipeline:</strong> Implemented a Jenkins + Docker pipeline for automated testing and container deployment.</li>
       </ul>
     </section>
 
+    <!-- Education Section -->
     <section id="education">
       <h2>🎓 Education</h2>
+      <table class="edu-table">
+        <tr>
+          <th>Degree/Course</th>
+          <th>Institute/College</th>
+          <th>University/Board</th>
+          <th>Percentage</th>
+          <th>Year</th>
+        </tr>
+        <tr>
+          <td>MCA</td>
+          <td>Gnanamani College Of Technology</td>
+          <td>Autonomous (Anna University)</td>
+          <td>78.6%</td>
+          <td>2025</td>
+        </tr>
+        <tr>
+          <td>BCA</td>
+          <td>Paavendhar College of Arts and Science</td>
+          <td>Periyar University</td>
+          <td>79.16%</td>
+          <td>2023</td>
+        </tr>
+        <tr>
+          <td>HSC</td>
+          <td>Sakthi Matric Hr Sec School</td>
+          <td>State Board</td>
+          <td>68.1%</td>
+          <td>2020</td>
+        </tr>
+        <tr>
+          <td>SSLC</td>
+          <td>Sakthi Matric Hr Sec School</td>
+          <td>State Board</td>
+          <td>75.8%</td>
+          <td>2018</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+      <h2>💼 Experience</h2>
+      <p>
+        <strong>IT Intern</strong> at Magickwoods Exports Pvt. Ltd., Chennai<br>
+        <em>March 2025 – Present</em>
+      </p>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications">
+      <h2>📜 Certifications & Achievements</h2>
       <ul>
-        <li><strong>MCA:</strong> Gnanamani College of Autonomous (2023–2025)</li>
-        <li><strong>BCA:</strong> Paavendhar College of Arts and Science (2020–2023)</li>
+        <li>AWS & DevOps course – Green Technology, Chennai</li>
+        <li>Python Fundamentals for Beginners – Great Learning Academy</li>
+        <li>Java Programming – Great Learning Academy</li>
+        <li>Attended Machine Learning seminar – Paavendhar College</li>
+        <li>National level E-Quiz on C++ – Nehru Memorial College (85%)</li>
+        <li>3rd Prize in Chart Preparation – Paavendhar College</li>
+        <li>AI Course – Microsoft & SAP, Naan Mudhalvan Program</li>
       </ul>
     </section>
 
+    <!-- Contact Section -->
     <section id="contact">
       <h2>📞 Contact</h2>
-      <p>Email: <a href="mailto:srikanth.s9399@gmail.com">srikanth.s9399@gmail.com</a></p>
-      <p>Phone: +91 6379741012</p>
-      <p>Location: Chennai (Maraimalainagar), Tamil Nadu</p>
+      <p><i class="fas fa-envelope"></i> <a href="mailto:srikanth.s9399@gmail.com">srikanth.s9399@gmail.com</a></p>
+      <p><i class="fas fa-phone"></i> +91 6379741012</p>
+      <p><i class="fas fa-map-marker-alt"></i> Chennai (Maraimalainagar), Tamil Nadu</p>
     </section>
 
+    <!-- Links Section -->
     <section id="links">
       <h2>🔗 External Profiles</h2>
       <ul>
-        <li><a href="https://www.linkedin.com/in/srikanth-senthil-7455b0277" target="_blank">LinkedIn</a></li>
-        <li><a href="https://www.naukri.com/mnjuser/profile?id=&altresid" target="_blank">Naukri</a></li>
+        <li><a href="https://www.linkedin.com/in/srikanth-senthil-7455b0277" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+        <li><a href="https://www.naukri.com/mnjuser/profile" target="_blank"><i class="fas fa-briefcase"></i> Naukri</a></li>
+        <li><a href="https://github.com/yourgithub" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
       </ul>
     </section>
   </main>
@@ -82,3 +177,4 @@
   </footer>
 </body>
 </html>
+
