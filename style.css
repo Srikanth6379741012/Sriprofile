@@ -82,18 +82,30 @@ ul li {
   margin-bottom: 10px;
 }
 
-/* Skills */
-.skill-list {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+/* Skills with Progress Bars */
+.skill {
+  margin-bottom: 20px;
 }
-.skill-list li {
-  background-color: #e0f0ff;
-  padding: 10px 15px;
-  border-radius: 5px;
-  color: #005fa3;
+.skill p {
+  margin-bottom: 8px;
   font-weight: 500;
+}
+.progress {
+  background: #e0e0e0;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 20px;
+}
+.progress-bar {
+  background: linear-gradient(90deg, #0077cc, #00bfff);
+  color: white;
+  height: 100%;
+  text-align: right;
+  padding-right: 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  line-height: 20px;
 }
 
 /* Footer */
@@ -109,9 +121,6 @@ footer {
   nav ul {
     flex-direction: column;
     align-items: center;
-  }
-  .skill-list {
-    flex-direction: column;
   }
   .profile-photo {
     position: static;
