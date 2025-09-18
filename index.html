@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Srikanth S | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Srikant S | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <img src="6992.jpg" alt="My Photo" class="profile-photo">
   <!-- Header -->
   <header>
-    <div class="header-content container">
-      <div>
-        <h1>Srikanth S</h1>
-        <p class="subtitle">AWS | DevOps | Python | Linux</p>
+    <div class="container">
+      <h1>Srikant S</h1>
+      <p>AWS | DevOps | Python | Linux</p>
+      <div class="header-links">
+        <a href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.naukri.com/mnjuser/profile" target="_blank"><i class="fas fa-briefcase"></i></a>
+        <a href="https://github.com/Srikanth6379741012" target="_blank"><i class="fab fa-github"></i></a>
       </div>
-      <img src="profile.jpg" alt="Profile Photo" class="profile-pic">
+      <img src="6992.jpg" alt="Srikant Profile Photo" class="profile-photo">
     </div>
   </header>
 
@@ -33,150 +34,110 @@
       <li><a href="#experience">Experience</a></li>
       <li><a href="#certifications">Certifications</a></li>
       <li><a href="#contact">Contact</a></li>
-      <li><a href="#links">Links</a></li>
     </ul>
   </nav>
 
-  <main class="container">
-    <!-- About Section -->
-    <section id="about">
-      <h2>👋 About Me</h2>
-      <p>
-        Hello! I'm <strong>Srikanth S</strong>, passionate about cloud computing, DevOps practices, and automation. 
-        Skilled in AWS services, containerization, CI/CD pipelines, Linux administration, and Python scripting. 
-        Currently pursuing my MCA and gaining hands-on experience as an IT Intern. 
-        I aim to build scalable, secure, and efficient cloud-based solutions.
-      </p>
-    </section>
+  <!-- About -->
+  <section id="about" class="container">
+    <h2>👋 About Me</h2>
+    <p>Hello! I'm <strong>Srikant S</strong>, passionate about cloud computing, DevOps practices, and automation. Skilled in AWS services, containerization, CI/CD pipelines, Linux administration, and Python scripting. Currently pursuing my MCA and gaining hands-on experience as an IT Intern. I aim to build scalable, secure, and efficient cloud-based solutions.</p>
+  </section>
 
-    <!-- Skills Section -->
-    <section id="skills">
-      <h2>🧠 Skills</h2>
-      <h3>Cloud</h3>
-      <ul class="skill-list">
-        <li>AWS EC2 (Server creation)</li>
-        <li>AWS S3 (Simple Storage Service)</li>
-        <li>AWS VPC (VPC Peering)</li>
-        <li>AWS ELB (Elastic Load Balancing)</li>
-        <li>AWS Route 53</li>
-      </ul>
-      <h3>DevOps</h3>
-      <ul class="skill-list">
-        <li>Jenkins</li>
-        <li>Docker</li>
-        <li>Kubernetes</li>
-        <li>Terraform</li>
-      </ul>
-      <h3>Operating Systems</h3>
-      <ul class="skill-list">
-        <li>Linux</li>
-        <li>Windows</li>
-      </ul>
-      <h3>Programming Languages</h3>
-      <ul class="skill-list">
-        <li>Python</li>
-        <li>Java (Basic)</li>
-      </ul>
-    </section>
+  <!-- Skills -->
+  <section id="skills" class="container">
+    <h2>🧠 Skills</h2>
+    <ul class="skill-list">
+      <li><strong>Cloud - AWS</strong>: EC2, S3, VPC, ELB, Route 53</li>
+      <li><strong>DevOps</strong>: Jenkins, Docker, Kubernetes, Terraform</li>
+      <li><strong>Operating Systems</strong>: Linux, Windows</li>
+      <li><strong>Programming</strong>: Python, Java (Basic)</li>
+    </ul>
+  </section>
 
-    <!-- Projects Section -->
-    <section id="projects">
-      <h2>🛠️ Projects</h2>
-      <ul>
-        <li><strong>Food Donation Bridge:</strong> A college project that connects donors and NGOs using a web portal to distribute food efficiently.</li>
-        <li><strong>AWS Hosting Project:</strong> Deployed a static website on AWS S3 with CloudFront, Route 53, and SSL for secure delivery.</li>
-        <li><strong>DevOps CI/CD Pipeline:</strong> Implemented a Jenkins + Docker pipeline for automated testing and container deployment.</li>
-      </ul>
-    </section>
+  <!-- Projects -->
+  <section id="projects" class="container">
+    <h2>💻 Projects</h2>
+    <ul>
+      <li><strong>Food Donation Bridge</strong> – A platform to connect donors with NGOs for efficient food distribution.</li>
+      <li><strong>AWS Deployment</strong> – Hosted and managed a web application on AWS using EC2, S3, and Load Balancer.</li>
+      <li><strong>DevOps Pipeline</strong> – Built a CI/CD pipeline with Jenkins, Docker, and Kubernetes.</li>
+    </ul>
+  </section>
 
-    <!-- Education Section -->
-    <section id="education">
-      <h2>🎓 Education</h2>
-      <table class="edu-table">
-        <tr>
-          <th>Degree/Course</th>
-          <th>Institute/College</th>
-          <th>University/Board</th>
-          <th>Percentage</th>
-          <th>Year</th>
-        </tr>
-        <tr>
-          <td>MCA</td>
-          <td>Gnanamani College Of Technology</td>
-          <td>Autonomous (Anna University)</td>
-          <td>78.6%</td>
-          <td>2025</td>
-        </tr>
-        <tr>
-          <td>BCA</td>
-          <td>Paavendhar College of Arts and Science</td>
-          <td>Periyar University</td>
-          <td>79.16%</td>
-          <td>2023</td>
-        </tr>
-        <tr>
-          <td>HSC</td>
-          <td>Sakthi Matric Hr Sec School</td>
-          <td>State Board</td>
-          <td>68.1%</td>
-          <td>2020</td>
-        </tr>
-        <tr>
-          <td>SSLC</td>
-          <td>Sakthi Matric Hr Sec School</td>
-          <td>State Board</td>
-          <td>75.8%</td>
-          <td>2018</td>
-        </tr>
-      </table>
-    </section>
+  <!-- Education -->
+  <section id="education" class="container">
+    <h2>🎓 Education</h2>
+    <table>
+      <tr>
+        <th>Degree/Course</th>
+        <th>Institute/College</th>
+        <th>University/Board</th>
+        <th>Percentage</th>
+        <th>Year</th>
+      </tr>
+      <tr>
+        <td>MCA</td>
+        <td>Gnanamani College of Technology</td>
+        <td>Autonomous (Anna University)</td>
+        <td>78.6%</td>
+        <td>2025</td>
+      </tr>
+      <tr>
+        <td>BCA</td>
+        <td>Paavendhar College of Arts & Science</td>
+        <td>Periyar University</td>
+        <td>79.16%</td>
+        <td>2023</td>
+      </tr>
+      <tr>
+        <td>HSC</td>
+        <td>Sakthi Matric Hr. Sec. School</td>
+        <td>State Board</td>
+        <td>68.1%</td>
+        <td>2020</td>
+      </tr>
+      <tr>
+        <td>SSLC</td>
+        <td>Sakthi Matric Hr. Sec. School</td>
+        <td>State Board</td>
+        <td>75.8%</td>
+        <td>2018</td>
+      </tr>
+    </table>
+  </section>
 
-    <!-- Experience Section -->
-    <section id="experience">
-      <h2>💼 Experience</h2>
-      <p>
-        <strong>IT Intern</strong> at Magickwoods Exports Pvt. Ltd., Chennai<br>
-        <em>March 2025 – Present</em>
-      </p>
-    </section>
+  <!-- Experience -->
+  <section id="experience" class="container">
+    <h2>💼 Experience</h2>
+    <p>Working as <strong>IT Intern</strong> at Magickwoods Exports Pvt Ltd, Chennai.</p>
+    <p><em>From 17th March 2025 – Till Date</em></p>
+  </section>
 
-    <!-- Certifications Section -->
-    <section id="certifications">
-      <h2>📜 Certifications & Achievements</h2>
-      <ul>
-        <li>AWS & DevOps course – Green Technology, Chennai</li>
-        <li>Python Fundamentals for Beginners – Great Learning Academy</li>
-        <li>Java Programming – Great Learning Academy</li>
-        <li>Attended Machine Learning seminar – Paavendhar College</li>
-        <li>National level E-Quiz on C++ – Nehru Memorial College (85%)</li>
-        <li>3rd Prize in Chart Preparation – Paavendhar College</li>
-        <li>AI Course – Microsoft & SAP, Naan Mudhalvan Program</li>
-      </ul>
-    </section>
+  <!-- Certifications -->
+  <section id="certifications" class="container">
+    <h2>📜 Certifications & Achievements</h2>
+    <ul>
+      <li>AWS & DevOps – Green Technology, Chennai</li>
+      <li>Python Fundamentals – Great Learning Academy</li>
+      <li>Java Programming – Great Learning Academy</li>
+      <li>Seminar on Machine Learning – Paavendhar College</li>
+      <li>National E-Quiz on C++ – Nehru Memorial College (85%)</li>
+      <li>Third Prize – Chart Preparation, Paavendhar College</li>
+      <li>AI Course – Microsoft & SAP (Naan Mudhalvan program)</li>
+    </ul>
+  </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-      <h2>📞 Contact</h2>
-      <p><i class="fas fa-envelope"></i> <a href="mailto:srikanth.s9399@gmail.com">srikanth.s9399@gmail.com</a></p>
-      <p><i class="fas fa-phone"></i> +91 6379741012</p>
-      <p><i class="fas fa-map-marker-alt"></i> Chennai (Maraimalainagar), Tamil Nadu</p>
-    </section>
+  <!-- Contact -->
+  <section id="contact" class="container">
+    <h2>📩 Contact</h2>
+    <p>Email: <a href="mailto:yourmail@gmail.com">yourmail@gmail.com</a></p>
+    <p>Phone: +91-XXXXXXXXXX</p>
+  </section>
 
-    <!-- Links Section -->
-    <section id="links">
-      <h2>🔗 External Profiles</h2>
-      <ul>
-        <li><a href="https://www.linkedin.com/in/srikanth-senthil-7455b0277" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
-        <li><a href="https://www.naukri.com/mnjuser/profile" target="_blank"><i class="fas fa-briefcase"></i> Naukri</a></li>
-        <li><a href="https://github.com/yourgithub" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
-      </ul>
-    </section>
-  </main>
-
+  <!-- Footer -->
   <footer>
-    <p>© 2025 Srikanth S. All rights reserved.</p>
+    <p>© 2025 Srikant S | All Rights Reserved</p>
   </footer>
 </body>
 </html>
-
 
