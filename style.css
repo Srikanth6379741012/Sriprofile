@@ -1,74 +1,98 @@
-/* Reset and Base Styles */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: 'Poppins', sans-serif;
   background-color: #f8f9fa;
   color: #333;
   line-height: 1.6;
 }
+
 .container {
   max-width: 1000px;
   margin: auto;
   padding: 20px;
-}
-h2 {
-  color: #0077cc;
-  margin-bottom: 15px;
-}
-a {
-  color: #0077cc;
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
 }
 
 /* Header */
 header {
   background-color: #0077cc;
   color: white;
-  padding: 30px 20px;
+  padding: 40px 20px;
+  position: relative;
+  text-align: left;
 }
-.header-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+
+header h1 {
+  font-size: 2.2rem;
+  font-weight: 600;
 }
-.profile-pic {
+
+header p {
+  margin-top: 5px;
+  font-size: 1.1rem;
+}
+
+.header-links {
+  margin-top: 10px;
+}
+
+.header-links a {
+  color: white;
+  margin-right: 15px;
+  font-size: 1.4rem;
+  text-decoration: none;
+}
+
+.header-links a:hover {
+  color: #ffdd57;
+}
+
+/* Profile photo */
+.profile-photo {
+  position: absolute;
+  top: 20px;
+  right: 40px;
   width: 120px;
   height: 120px;
   border-radius: 50%;
   border: 4px solid white;
   object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  background-color: white;
 }
 
 /* Navigation */
 nav {
   background-color: #005fa3;
 }
+
 nav ul {
   display: flex;
   justify-content: center;
   list-style: none;
   padding: 10px;
-  flex-wrap: wrap;
 }
+
 nav li {
   margin: 0 15px;
 }
+
 nav a {
   color: white;
+  text-decoration: none;
   font-weight: 500;
 }
+
 nav a:hover {
-  border-bottom: 2px solid #fff;
+  text-decoration: underline;
 }
 
-/* Sections */
+/* Section styling */
 section {
   background: white;
   margin-top: 20px;
@@ -76,31 +100,42 @@ section {
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
-.skill-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+
+h2 {
+  color: #0077cc;
   margin-bottom: 15px;
 }
-.skill-list li {
-  background-color: #e0f0ff;
-  padding: 8px 14px;
-  border-radius: 5px;
-  color: #005fa3;
-  font-weight: 500;
+
+/* Skills */
+.skill-list {
+  list-style: none;
 }
 
-/* Education Table */
-.edu-table {
+.skill-list li {
+  margin-bottom: 10px;
+  padding: 10px;
+  background: #e0f0ff;
+  border-radius: 6px;
+  color: #005fa3;
+}
+
+/* Table (Education) */
+table {
   width: 100%;
   border-collapse: collapse;
+  margin-top: 10px;
 }
-.edu-table th, .edu-table td {
+
+table, th, td {
   border: 1px solid #ddd;
-  padding: 8px;
-  text-align: center;
 }
-.edu-table th {
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+th {
   background-color: #0077cc;
   color: white;
 }
@@ -111,35 +146,19 @@ footer {
   padding: 20px;
   margin-top: 40px;
   background-color: #e9ecef;
+  font-size: 0.9rem;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
-  .header-content {
-    flex-direction: column;
-    text-align: center;
-  }
-  .profile-pic {
-    margin-top: 15px;
-  }
   nav ul {
     flex-direction: column;
     align-items: center;
   }
-  .skill-list {
-    flex-direction: column;
+
+  .profile-photo {
+    position: static;
+    display: block;
+    margin: 20px auto 0 auto;
   }
 }
-.profile-photo {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  width: 120px;
-  height: auto;
-  border-radius: 50%; /* Makes it circular */
-  border: 3px solid #333;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-}
-
-
-
