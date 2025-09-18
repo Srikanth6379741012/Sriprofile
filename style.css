@@ -1,21 +1,20 @@
-/* Reset */
+/* Reset and Base Styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   font-family: 'Poppins', sans-serif;
   background-color: #f8f9fa;
   color: #333;
   line-height: 1.6;
 }
-
 .container {
   max-width: 1000px;
   margin: auto;
   padding: 20px;
+  position: relative;
 }
 
 /* Header */
@@ -23,36 +22,13 @@ header {
   background-color: #0077cc;
   color: white;
   padding: 40px 20px;
+  text-align: center;
   position: relative;
-  text-align: left;
 }
-
-header h1 {
-  font-size: 2.2rem;
-  font-weight: 600;
-}
-
-header p {
-  margin-top: 5px;
-  font-size: 1.1rem;
-}
-
-.header-links {
+.subtitle {
+  font-size: 1.2rem;
   margin-top: 10px;
 }
-
-.header-links a {
-  color: white;
-  margin-right: 15px;
-  font-size: 1.4rem;
-  text-decoration: none;
-}
-
-.header-links a:hover {
-  color: #ffdd57;
-}
-
-/* Profile photo */
 .profile-photo {
   position: absolute;
   top: 20px;
@@ -60,39 +36,34 @@ header p {
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  border: 4px solid white;
+  border: 3px solid #fff;
   object-fit: cover;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Navigation */
 nav {
   background-color: #005fa3;
 }
-
 nav ul {
   display: flex;
   justify-content: center;
   list-style: none;
   padding: 10px;
 }
-
 nav li {
   margin: 0 15px;
 }
-
 nav a {
   color: white;
   text-decoration: none;
   font-weight: 500;
 }
-
 nav a:hover {
   text-decoration: underline;
 }
 
-/* Section styling */
+/* Main Content */
 section {
   background: white;
   margin-top: 20px;
@@ -100,44 +71,29 @@ section {
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
-
 h2 {
   color: #0077cc;
   margin-bottom: 15px;
 }
+ul {
+  list-style: none;
+}
+ul li {
+  margin-bottom: 10px;
+}
 
 /* Skills */
 .skill-list {
-  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
-
 .skill-list li {
-  margin-bottom: 10px;
-  padding: 10px;
-  background: #e0f0ff;
-  border-radius: 6px;
+  background-color: #e0f0ff;
+  padding: 10px 15px;
+  border-radius: 5px;
   color: #005fa3;
-}
-
-/* Table (Education) */
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 10px;
-}
-
-table, th, td {
-  border: 1px solid #ddd;
-}
-
-th, td {
-  padding: 10px;
-  text-align: left;
-}
-
-th {
-  background-color: #0077cc;
-  color: white;
+  font-weight: 500;
 }
 
 /* Footer */
@@ -146,7 +102,6 @@ footer {
   padding: 20px;
   margin-top: 40px;
   background-color: #e9ecef;
-  font-size: 0.9rem;
 }
 
 /* Responsive */
@@ -155,10 +110,13 @@ footer {
     flex-direction: column;
     align-items: center;
   }
-
+  .skill-list {
+    flex-direction: column;
+  }
   .profile-photo {
     position: static;
     display: block;
     margin: 20px auto 0 auto;
   }
 }
+
