@@ -130,4 +130,16 @@ footer {
     flex-direction: column;
   }
 }
+.profile-photo {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 120px;
+  height: auto;
+  border-radius: 50%; /* Makes it circular */
+  border: 3px solid #333;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+
 
