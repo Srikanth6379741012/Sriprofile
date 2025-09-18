@@ -1,46 +1,103 @@
-body {
-  font-family: Arial, sans-serif;
+/* Reset and Base Styles */
+* {
   margin: 0;
   padding: 0;
-  background: #f4f4f4;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f9fa;
   color: #333;
+  line-height: 1.6;
+}
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
 }
 
+/* Header */
 header {
-  background: #007acc;
+  background-color: #0077cc;
   color: white;
-  padding: 20px;
-  position: relative;
+  padding: 40px 20px;
   text-align: center;
 }
-
-.profile-photo {
-  position: absolute;
-  top: 20px;
-  right: 20px;
+.subtitle {
+  font-size: 1.2rem;
+  margin-top: 10px;
 }
 
-.profile-photo img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+/* Navigation */
+nav {
+  background-color: #005fa3;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 10px;
+}
+nav li {
+  margin: 0 15px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+nav a:hover {
+  text-decoration: underline;
 }
 
-main {
-  padding: 20px;
-}
-
+/* Main Content */
 section {
-  margin-bottom: 30px;
+  background: white;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
-
 h2 {
-  color: #007acc;
+  color: #0077cc;
+  margin-bottom: 15px;
+}
+ul {
+  list-style: none;
+}
+ul li {
+  margin-bottom: 10px;
 }
 
+/* Skills */
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.skill-list li {
+  background-color: #e0f0ff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  color: #005fa3;
+  font-weight: 500;
+}
+
+/* Footer */
 footer {
   text-align: center;
-  padding: 10px;
-  background: #ddd;
+  padding: 20px;
+  margin-top: 40px;
+  background-color: #e9ecef;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .skill-list {
+    flex-direction: column;
+  }
 }
