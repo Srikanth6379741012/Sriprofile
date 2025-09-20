@@ -35,10 +35,10 @@ header {
   right: 40px;
   width: 120px;
   height: 120px;
-  border-radius: 50%;
   border: 3px solid #fff;
   object-fit: cover;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  order-radius: 0; /* <-- makes it a box */
 }
 
 /* Navigation */
@@ -174,3 +174,4 @@ footer {
 .certificate-gallery img:hover {
   transform: scale(1.03);
 }
+
