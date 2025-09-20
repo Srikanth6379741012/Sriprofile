@@ -33,13 +33,12 @@ header {
   position: absolute;
   top: 20px;
   right: 40px;
-  display: inline-block;    /* shrink to fit content */
+  width: 120px;
+  height: 120px;
   border: 3px solid #fff;
-  object-fit: cover;        /* covers the box if image is bigger than container */
+  object-fit: cover;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  border-radius: 0;         /* square box */
-  max-width: 100%;          /* ensure it doesn't overflow parent */
-  height: auto; 
+  border-radius: 0; /* <-- makes it a box */
 }
 
 /* Navigation */
@@ -175,6 +174,7 @@ footer {
 .certificate-gallery img:hover {
   transform: scale(1.03);
 }
+
 
 
 
