@@ -1,0 +1,21 @@
+name: Scheduled Daily Push
+
+on:
+  schedule:
+    - cron: '30 4 * * *'  # Runs daily at 10:00 AM IST (adjust as needed)
+
+jobs:
+  push-code:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Make a dummy commit
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          date > daily-update.txt
+          git add daily-update.txt
+          git commit -m "Daily trigger commit"
+          git push
